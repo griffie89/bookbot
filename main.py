@@ -19,11 +19,10 @@ def count_characters(text):
     char_count = {}  # Dictionary to store character frequencies
     
     for char in text:
-        if char.isalpha():  # Only count alphabetic characters
-            if char in char_count:
-                char_count[char] += 1
-            else:
-                char_count[char] = 1
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
     
     return char_count
 
